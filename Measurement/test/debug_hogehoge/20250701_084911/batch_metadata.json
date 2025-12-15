@@ -1,0 +1,9 @@
+{
+  "material": "debug_hogehoge",
+  "distance_x": 20,
+  "distance_y": 20,
+  "speed": 1000,
+  "z_lift": 5,
+  "count": 3,
+  "batch_timestamp": "20250701_084911"
+}

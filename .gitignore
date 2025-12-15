@@ -1,0 +1,150 @@
+# =========================================================
+
+# Research / Experiment repo .gitignore template
+
+# - Code & configs tracked
+
+# - Big logs/artifacts/cache are ignored
+
+# =========================================================
+
+# ---- OS / Editor ----
+
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ---- Python ----
+
+**pycache**/
+*.py[cod]
+*.pyd
+*.so
+.venv/
+venv/
+.env
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# ---- Jupyter ----
+
+.ipynb_checkpoints/
+
+# ---- Weights & Biases (W&B) ----
+
+wandb/
+**/wandb/
+**/wandb/**/logs/
+**/wandb/**/debug-internal.log
+**/wandb/**/debug.log
+
+# If you use offline mode
+
+**/wandb/offline-run-*/
+
+# ---- ML training outputs / checkpoints ----
+
+checkpoints/
+**/checkpoints/
+runs/
+**/runs/
+outputs/
+**/outputs/
+results/
+**/results/
+artifacts/
+**/artifacts/
+
+# Common model/array formats (often large)
+
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+
+# Numpy / data dumps (tend to be large)
+
+*.npy
+*.npz
+
+# ---- Logs ----
+
+logs/
+**/logs/
+*.log
+*.out
+*.err
+
+# ---- Media / recordings (often huge) ----
+
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.gif
+*.wav
+*.flac
+
+# ---- Datasets (choose ONE policy) ----
+
+# Policy A: ignore all raw datasets by default
+
+data/
+dataset/
+datasets/
+**/data/
+**/dataset/
+**/datasets/
+
+# But keep small metadata/docs inside data
+
+!data/README.md
+!data/.gitkeep
+!datasets/README.md
+!datasets/.gitkeep
+
+# ---- Caches ----
+
+.cache/
+**/.cache/
+torch_cache/
+**/torch_cache/
+huggingface/
+**/huggingface/
+*.cache
+
+# ---- Temporary / scratch ----
+
+tmp/
+temp/
+scratch/
+**/tmp/
+**/temp/
+**/scratch/
+
+# ---- Secrets (never commit) ----
+
+*.key
+*.pem
+*.crt
+secrets/
+**/secrets/
+credentials.json
+.env.*
+

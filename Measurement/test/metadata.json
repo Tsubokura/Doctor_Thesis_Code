@@ -1,0 +1,9 @@
+{
+  "distance_x": 10,
+  "distance_y": 5,
+  "speed": 1000,
+  "z_lift": 0.01,
+  "count": 3,
+  "material": "debug_hogehoge",
+  "timestamp": "2025-06-23 10:59:30"
+}

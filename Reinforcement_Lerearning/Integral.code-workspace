@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Python_RL/baby-steps-of-rl-ja/FN_torch"
+		}
+	],
+	"settings": {}
+}
