@@ -157,5 +157,7 @@ def sequence_accuracy_majority_vote(logits_time_major, target_index_per_sequence
     predicted_index_BT = logits_time_major.argmax(dim=-1)  # [B, T]
     vote_counts_BC = F.one_hot(predicted_index_BT, num_classes=num_classes).sum(dim=1).float()  # [B, C]
     predicted_index_B = vote_counts_BC.argmax(dim=-1)  # [B]
+    print(f"predicted_index_B + {predicted_index_B}")
+    print(f"target_index_per_sequence + {target_index_per_sequence}")
 
     return (predicted_index_B == target_index_per_sequence).float().mean().item()
